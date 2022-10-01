@@ -250,7 +250,7 @@ export default {
 
     const getRoomByConnectorId = async () => {
       const res = await axios.get(
-        `https://release-mto.herokuapp.com/api/sys_users/ChatRoom?PageNumber=${1}&PageSize=${1000}`,
+        "https://release-mto.herokuapp.com/api/sys_users/ChatRoom?PageNumber=1&PageSize=1000",
         {
           headers: {
             Authorization: `Bearer ${user.token}`,
